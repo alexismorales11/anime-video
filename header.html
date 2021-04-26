@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Header</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-image: linear-gradient(90deg, #e90000 0%, #ff0077 100%);
+        font-family: fantasy;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(90deg, #e90000 0%, #ff0077 100%);
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__img{
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header__menu ul{
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        text-align: right;
+        margin: 0 0 0 -14px;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .header__menu:hover ul, ul:hover {
+        display: block;
+    }
+    .header__menu{
+        margin-right: 30px;
+    }
+    .header__menu li{
+        margin: 30px 0;
+    }
+    .header__menu li a{
+        color:black;
+        text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration:underline;
+        color: white;
+    }
+    .header__menu__profile{
+        margin-right: 120px;
+        width: 40px;
+        display: flex;
+    }
+    .header__menu__profile img{
+        width: 50px;
+        margin-top: 20px;
+    }
+    .header__menu__profile p{
+        margin: 30px 0 0 20px;
+        font-size: 25px;
+    }
+    .main{
+        height: 300px;
+    }
+    .main__title{
+        color: white;
+        font-size: 35px;
+    }
+    .input{
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-size: 25px;
+        height: 50px;
+        width: 50%;
+        
+    }
+    ::placeholder{
+        color: white;
+    }
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="./img/logo.png" alt="Logo">
+        <div class="header__menu">
+            <div class="header__menu__profile">
+                <img src="./img/perfil.png" alt="usuario titan">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <h2 class="main__title">¿Que quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscas...">
+    </section>
+</body>
+</html>
+
+
+
+
+
+
